@@ -1,0 +1,103 @@
+@use "../abstracts/variables" as *;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 0;
+
+  picture {
+    width: 220px;
+    height: auto;
+
+    img {
+      display: flex;
+      align-self: end;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 50px;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .btn {
+    background-color: $primary-color;
+    width: 145px;
+    height: 60px;
+    border: none;
+
+    a {
+      color: white;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .home a {
+    color: $primary-color;
+  }
+}
+
+.menu {
+  a {
+    font-size: 18px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  div.search {
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  & > a {
+    color: $primary-color;
+    &:hover {
+      color: black;
+    }
+  }
+
+  img {
+    background-color: white;
+  }
+  input {
+    width: 0;
+    opacity: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    transition:
+      width 0.3s ease,
+      opacity 0.2s ease;
+  }
+
+  &.active input {
+    width: 160px;
+    opacity: 1;
+    padding: 4px 8px;
+    border-bottom: 1px solid #c4bebe;
+  }
+}

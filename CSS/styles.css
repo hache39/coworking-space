@@ -1,0 +1,266 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 0;
+}
+header picture {
+  width: 220px;
+  height: auto;
+}
+header picture img {
+  display: flex;
+  align-self: end;
+}
+header nav ul {
+  display: flex;
+  gap: 50px;
+}
+header nav li {
+  list-style: none;
+}
+header a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+header .btn {
+  background-color: #9b9a78;
+  width: 145px;
+  height: 60px;
+  border: none;
+}
+header .btn a {
+  color: white;
+}
+header .btn a:hover {
+  color: black;
+}
+header .home a {
+  color: #9b9a78;
+}
+
+.menu a {
+  font-size: 18px;
+  text-decoration: none;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.busqueda div.search button {
+  background-color: transparent;
+  border: none;
+}
+.busqueda > a {
+  color: #9b9a78;
+}
+.busqueda > a:hover {
+  color: black;
+}
+.busqueda img {
+  background-color: white;
+}
+.busqueda input {
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  transition:
+    width 0.3s ease,
+    opacity 0.2s ease;
+}
+.busqueda.active input {
+  width: 160px;
+  opacity: 1;
+  padding: 4px 8px;
+  border-bottom: 1px solid #c4bebe;
+}
+
+main {
+  height: 588px;
+}
+main .hero {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: end;
+  background-image: url("../../Imagenes/Placeholder.jpg");
+  background-size: 960px 560px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+main .hero-conten {
+  margin-top: 95px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  bottom: 25px;
+  left: 70px;
+  width: 780px;
+  height: 419px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: start;
+  padding-left: 46px;
+  padding-top: 46px;
+  padding-bottom: 54px;
+  padding-right: 20px;
+}
+main .hero-conten h1 {
+  position: relative;
+  font-size: 56px;
+  font-family: "Heading 1";
+  line-height: 72px;
+}
+main .hero-conten h1 span {
+  position: relative;
+  bottom: 9px;
+  left: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+main .hero-conten p {
+  font-size: 23px;
+  color: #909090;
+}
+main .hero-list {
+  margin-top: 3px;
+}
+main .hero-list ul {
+  width: 428px;
+  height: 78px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: start;
+  gap: 32px 20px;
+}
+main .hero-list ul li {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  text-align: center;
+  font-size: 15px;
+}
+main .hero-info {
+  display: flex;
+  gap: 30px;
+  margin-top: 35px;
+}
+main .hero-info div {
+  width: 512px;
+  height: 240px;
+  padding: 27px 96px;
+}
+main .hero-info div img {
+  width: 60px;
+  height: 60px;
+}
+main .hero-info div h3 {
+  font-weight: 400;
+}
+main .hero-info div p {
+  color: #909090;
+}
+
+html * {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  header {
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 16px;
+  }
+  header picture {
+    width: 160px;
+  }
+  nav.menu {
+    display: none;
+  }
+  nav.busqueda {
+    gap: 16px;
+  }
+  nav.busqueda .search input {
+    width: 120px;
+    opacity: 1;
+  }
+  main {
+    height: auto;
+  }
+  main .hero {
+    background-size: cover;
+    background-position: center;
+    align-items: flex-start;
+    min-height: 400px;
+  }
+  main .hero-conten {
+    width: 100%;
+    left: 0;
+    height: auto;
+    margin-top: 40px;
+    padding: 24px;
+    gap: 20px;
+  }
+  main .hero-conten h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  main .hero-conten p {
+    font-size: 16px;
+  }
+  main .hero-list ul {
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+  main .hero-info {
+    flex-direction: column;
+    gap: 16px;
+  }
+  main .hero-info div {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  main .hero-conten h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  main .hero-conten p {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

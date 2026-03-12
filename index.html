@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy Corner</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <input type="checkbox" id="nav-check" class="nav-check" />
+
+    <header>
+      <picture>
+        <img src="Imagenes/Cozy Corner.svg" alt="" />
+      </picture>
+      <nav class="menu">
+        <ul>
+          <li class="home"><a href="">Home</a></li>
+          <li class="About"><a href="">About</a></li>
+          <li class="Feature"><a href="">Feature</a></li>
+          <li class="Blog"><a href="">Blog</a></li>
+          <li class="More"><a href="">More</a></li>
+        </ul>
+      </nav>
+      <nav class="busqueda">
+        <div class="search">
+          <button class="search-btn" aria-label="Open search">
+            <img src="Imagenes/search.svg" alt="" />
+          </button>
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div>
+        <a href="#">Sign In</a>
+        <button class="btn">
+          <a href="#">Sign Up</a>
+        </button>
+      </nav>
+      <label for="nav-check" class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </header>
+
+    <div class="mobile-nav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Feature</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">More</a></li>
+      </ul>
+      <div class="mobile-nav__btns">
+        <a href="#">Sign In</a>
+        <button class="btn"><a href="#">Sign Up</a></button>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-conten">
+          <h1>
+            Find your comfort
+            <span><img src="Imagenes/Rectangle.png" alt="" /></span> <br />
+            working zone with <br />Cozy Corner
+          </h1>
+          <p>
+            Change your work environment by using a co-working place, to meet
+            new people and gain a new network
+          </p>
+        </div>
+        <div class="hero-list">
+          <ul>
+            <li>
+              <img src="Imagenes/Check.png" alt="" />
+              <p>Virtual Office Setup</p>
+            </li>
+            <li>
+              <img src="Imagenes/Check.png" alt="" />
+              <p>Space for Event</p>
+            </li>
+            <li>
+              <img src="Imagenes/Check.png" alt="" />
+              <p>Open Workspace</p>
+            </li>
+            <li>
+              <img src="Imagenes/Check.png" alt="" />
+              <p>Chill Out Zone</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="hero-info">
+        <div>
+          <img src="Imagenes/Location.svg" alt="" />
+          <h3>20+ Location</h3>
+          <p>Access our coworking spaces across major cities worldwide for maximum flexibility and convenience.</p>
+        </div>
+        <div>
+          <img src="Imagenes/Room.svg" alt="" />
+          <h3>324 Rooms Available</h3>
+          <p>Choose from a diverse range of office spaces, meeting rooms, and private suites tailored to your needs.</p>
+        </div>
+        <div>
+          <img src="Imagenes/wifi.svg" alt="" />
+          <h3>100% Internet Connected</h3>
+          <p>High-speed reliable connectivity ensures seamless collaboration and productivity throughout your workday.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </footer>
+</html>
